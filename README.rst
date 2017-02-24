@@ -10,7 +10,7 @@ It allows quick and easy comsumption of it-ebooks API from your Python applicati
 
 pyebooks reqires Python 3.
 
-
+	
 **Install**
 ***********
 
@@ -47,20 +47,43 @@ Creating an instance object of class
 
 .. code :: python
 	
-	>>> from pyebooks import Ebook
-	>>> eBook = Ebook(api_key)
+	>>> '''
+    	creata a new eBook object.
+    	'''
+    
+    >>> eBook = pyebooks.Ebook()
 
-Getting details of given PNR number
+    >>> '''
+    	Search the books
+    	'''
 
-.. code :: python
-	
-	>>> eBook.pnr(your_pnr_number)
+    >>> search_ = eBook.search("php mysql")
+
+    >>> print(search_.error)
+    >>> print(search_.time)
+    >>> print(search_.total)
+    >>> print(search_.page)
+
+    >>> print(search_.books)
+
+  	>>> # This will return a list of dictionary with following details:
+  	>>> '''
+  		ID, 
+  		Title, 
+  		SubTitle (optional), 
+  		Description, 
+  		Image
+  		'''
+    
 
 
-In any case the object returns
-	
-	"status" and "result"
+	>>> '''
+    	Get book detail
+    	'''
 
+    >>> book_ = eBook.book_detail(869476162)
+
+    >>> print(book_.download)
 
 **Examples**
 ************
