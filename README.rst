@@ -43,13 +43,13 @@ You can get the API Key from here http://api.eBook.in/
 *Using the module*
 ^^^^^^^^^^^^^^^^^^
 
-Creating an instance object of class
+
 
 .. code :: python
 	
-	>>> '''
-    	creata a new eBook object.
-    	'''
+>>> '''
+    creat a new eBook object.
+    '''
     
     >>> eBook = pyebooks.Ebook()
 
