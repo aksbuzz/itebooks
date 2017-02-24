@@ -15,7 +15,7 @@ setup(
 
     name='itebooks',
 
-    version='0.1.0',
+    version='0.3.1',
 
     description='Python wrapper for it-ebooks-api.',
 

@@ -1,4 +1,4 @@
-from .pyebooks import Erail
+from .itebooks import Ebook
 
 """
 

@@ -8,7 +8,8 @@ Akshay
 
 """
 
-import helpers
+import requests
+import sys
 
 
 class Ebook(object):
@@ -30,7 +31,7 @@ class Ebook(object):
         url = self.end_point + \
             '/search/{}/page/{}'.format(query_string, page_number)
 
-        response = helpers.get_json(url)
+        response = self.get_json(url)
 
         self.error = response.get("Error", None)
         self.time = response.get("Time", None)
@@ -43,7 +44,7 @@ class Ebook(object):
 
         url = self.end_point + '/book/{}'.format(id_)
 
-        response = helpers.get_json(url)
+        response = self.get_json(url)
 
         self.error = response.get("Error", None)
         self.time = response.get("Time", None)
@@ -58,6 +59,22 @@ class Ebook(object):
         self.publisher = response.get("Publisher", None)
         self.image = response.get("Image", None)
         self.download = response.get("Download", None)
+
+
+    def get_json(self, end_point):
+        '''
+        Make request to http://api.erail.in/
+        '''
+
+        try:
+            r = requests.get(end_point)
+
+        except requests.exceptions.RequestException as e:
+
+            print(e)
+            sys.exit(1)
+
+        return r.json()
 
 if __name__ == '__main__':
     

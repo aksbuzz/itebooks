@@ -1,4 +1,4 @@
-import pyebooks
+import itebooks
 
 
 if __name__ == '__main__':
@@ -7,7 +7,7 @@ if __name__ == '__main__':
     creata a new eBook object.
     '''
     
-    eBook = pyebooks.Ebook()
+    eBook = itebooks.Ebook()
 
     '''
     Search the books
