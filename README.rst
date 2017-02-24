@@ -46,10 +46,6 @@ You can get the API Key from here http://api.eBook.in/
 
 
 .. code :: python
-	
->>> '''
-    creat a new eBook object.
-    '''
     
     >>> eBook = pyebooks.Ebook()
 
