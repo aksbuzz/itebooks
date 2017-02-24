@@ -62,17 +62,14 @@ You can get the API Key from here http://api.eBook.in/
 
     >>> print(search_.books)
 
-  	>>> # This will return a list of dictionary with following details:
-  	>>> '''
+  	This will return a list of dictionary with following details:
+
   		ID, 
   		Title, 
   		SubTitle (optional), 
   		Description, 
   		Image
-  		'''
     
-
-
 	>>> '''
     	Get book detail
     	'''
