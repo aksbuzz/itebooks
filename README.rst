@@ -1,32 +1,32 @@
-pyebooks : A python wrapper around http://it-ebooks-api.info/ API
+itebooks : A python wrapper around http://it-ebooks-api.info/ API
 ===================================================================
 
 **What is it?**
 ****************
 
-pyebooks is a Python wrapper for the it-ebooks API.
+itebooks is a Python wrapper for the it-ebooks API.
 
 It allows quick and easy comsumption of it-ebooks API from your Python application.
 
-pyebooks reqires Python 3.
+itebooks reqires Python 3.
 
 	
 **Install**
 ***********
 
-You can install pyebooks using:
+You can install itebooks using:
 
 .. code ::
 
-	$ pip3 install pyebooks
+	$ pip3 install itebooks
 
 Build from source
 
 .. code ::
 	
-	$ git clone https://github.com/aksbuzz/pyebooks.git
+	$ git clone https://github.com/aksbuzz/itebooks.git
 
-	$ cd pyebooks
+	$ cd itebooks
 
 	$ make
 
@@ -47,7 +47,7 @@ You can get the API Key from here http://api.eBook.in/
 
 .. code :: python
     
-    >>> eBook = pyebooks.Ebook()
+    >>> eBook = itebooks.Ebook()
 
     >>> '''
     	Search the books
