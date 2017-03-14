@@ -63,7 +63,7 @@ class Ebook(object):
 
     def get_json(self, end_point):
         '''
-        Make request to http://api.erail.in/
+        Make request to http://it-ebooks-api.info/v1/
         '''
 
         try:
@@ -75,13 +75,3 @@ class Ebook(object):
             sys.exit(1)
 
         return r.json()
-
-if __name__ == '__main__':
-    
-    ebook = Ebook()
-
-    ebook.search("python")
-
-    print(ebook.total)
-    
-    print(ebook.books)
